@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #eee;
+    background: linear-gradient(90deg, rgba(0, 89, 185, 0.2) , rgba(200, 0, 17, 0.2) );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.card {
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
+    background: linear-gradient(90deg, rgba(0, 89, 185, 0.1) , rgba(200, 0, 17, 0.1)  );
+}
+
+
+#header, .game, .userInput {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    
+}
+
+#header {
+    font-size: 70px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.userInput {
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    
+}
+#answer {
+    padding: 20px;
+    font-size: 25px;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-family: 'Luckiest Guy', cursive;
+}
+#btn {
+    padding: 20px;
+    font-size: 25px;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #00ADB5;
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+}
+#btn:hover {
+    background-color: #08D9D6;
+}
+h2 {
+    padding: 8px;
+    color: #eee;
+}
+.red {
+    color: #FF2E63;
+}
+.yellow {
+    color: #F9ED69;
+}
+h3 {
+    color: #fff;
+}
+#problem {
+    font-size: 70px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+@media all and (max-width: 800px) {
+    body {
+        background-position: center;
+    }
+    .card {
+        width: 400px;
+    }
+    .userInput {
+        width: 300px;
+    }
+    #header {
+        font-size: 40px;
+    }
+    #problem {
+        font-size: 40px;
+    }
+    #answer {
+        font-size: 20px;
+    }
+    #btn {
+        font-size: 20px;
+    }
+}
+
+
+
